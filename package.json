@@ -1,6 +1,7 @@
 {
   "name": "training-shop",
   "version": "0.1.0",
+  "homepage": "https://GuzeevZhenya.github.io/training-shop",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
