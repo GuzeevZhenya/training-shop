@@ -1,0 +1,41 @@
+.info__block{
+	background: rgb(0, 0, 0);
+	width: 100vw;
+	color: rgb(255, 255, 255);
+}
+.info__block-section{
+	height: 24px;
+	margin: 0px auto;
+	padding: 0px 15px;
+	max-width: 1140px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.info__block-about{
+	display: flex;
+ 
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.info__block-about div{
+	margin-right: 30px;
+	display: flex;
+	align-items: center;
+}
+
+
+.info__block-section span{
+	font-family: Spartan;
+font-style: normal;
+font-weight: 500;
+font-size: 11px;
+line-height: 12px;
+
+}
+
+.info__block img{
+	margin: 0 10px;
+}
