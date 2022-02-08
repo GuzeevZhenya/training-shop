@@ -1,17 +1,15 @@
 import React from 'react';
 import { clothersItems } from './ClothersBd';
-import img from '../../img/Clothers/Rectangle 1 (1).jpg'
+import { ClotherItem } from './ClotherItem/ClotherItem';
+
 
 export const Clothers = () => {
 	
-	const clothersItem = clothersItems.map(item => (
-		<div>
-			<img src={item.img}/>
-		</div>
-	))
+	
 	return (
 		<div>
-			{clothersItem}
+			<ClotherItem itemList={clothersItems.women} clotherName={"Women's"} />
+			<ClotherItem itemList={clothersItems.men} clotherName={"Men's"}/>
 		</div>
 	)
 }
