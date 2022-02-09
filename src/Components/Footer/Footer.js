@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { Socialicons } from '../SocialIcons/SocialIcons';
  
 import {Link} from "react-router-dom";
 // import label1 from '../../img/icons/label1.png';
@@ -49,7 +50,7 @@ export const Footer = () => {
           <input type="text" className="footer__input" placeholder="Enter your email"/>
           <button className="footer__btn" type="submit">Join Us</button>
         </form>
-        
+        <Socialicons/>
       </div>
 
     </div>

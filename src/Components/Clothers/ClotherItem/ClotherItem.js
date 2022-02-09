@@ -15,7 +15,6 @@ export const ClotherItem = ({ itemList, clotherName }) => {
   const [ active, isActive ] = useState('');
 
   const itemFilter = (e) => {
-    console.log(e);
     switch (e) {
       case 'NEW ARRIVALS':
         const newArrivals = itemList.filter((item) => item.newArrivals === true);

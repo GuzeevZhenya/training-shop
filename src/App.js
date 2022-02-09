@@ -5,27 +5,28 @@ import Nav from './Components/Nav/Nav';
 import { Menu } from './Components/Menu/Menu';
 import { Delivery } from './Components/Delivery/Delivery';
 import { Clothers } from './Components/Clothers/Clothers';
-
+import { SpecialOffer } from './Components/SpecialOffer/SpecialOffer';
 import { Footer } from './Components/Footer/Footer';
+import { SpecialBanner } from './Components/SpecialBanner/SpecialBanner';
+import { Blog } from './Components/Blog/Blog';
 
 function App() {
   return (
     <BrowserRouter>
-    <div className="App">
-   
+      <div className="App">
         <InfoBlock />
-        
-          <div className="container">
-            <Nav />
-            <Menu />
-            <Delivery />
-            <Clothers />
-          </div>
-      
+        <div className="container">
+          <Nav />
+          <Menu />
+          <Delivery />
+          <Clothers />
+          <SpecialOffer />
+        </div>
+        <SpecialBanner />
+        <Blog/>
         <Footer />
-       
       </div>
-      </BrowserRouter>
+    </BrowserRouter>
 
     // <Router>
     //     <Navbar/>

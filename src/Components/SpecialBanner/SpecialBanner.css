@@ -1,0 +1,94 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 580px;
+  background: linear-gradient(180deg, #f3f2f2 0%, #dcdbdb 100%);
+	margin-bottom: 96px;
+}
+
+.banner__block {
+	position: relative;
+  width: 532px;
+  height: 461px;
+  padding: 80px 0 96px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.banner__block::after{
+	content: '';
+	position: absolute;
+	width: 219px;
+	height: 524px;
+	top: -10px;
+	right: -200px;
+	background-image: url('../../img//Banner//Men.png');
+	background-repeat: no-repeat;
+}
+
+.banner__block::before{
+	content: '';
+	position: absolute;
+	width: 311px;
+	height: 584px;
+	top:-24px;
+	left: -260px;
+	background-image: url('../../img//Banner//Women.png');
+	background-repeat: no-repeat;
+}
+
+.banner p {
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  opacity: 0.4;
+}
+
+.banner h6 {
+  max-width: 275px;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
+  margin-bottom: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.banner input {
+  width: 340px;
+  height: 64px;
+  margin-bottom: 24px;
+  background: #f8f8f8;
+  border: none;
+}
+
+.banner input::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0.4;
+}
+
+.banner button {
+  width: 340px;
+  height: 64px;
+  background: #121212;
+  border: 2px solid #121212;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.banner button:hover{
+  background: #ffffff;
+  color: #121212;
+}
+
