@@ -1,6 +1,8 @@
 import React from 'react';
 import banner from '../../img/Menu/Banner.jpg'; 
 import './Menu.css';
+import { BrowserRouter, Route, NavLink } from 'react-router-dom';
+import { Womenclother } from '../../Pages/Women/WomenClother';
 
 export const Menu = () => {
   return (
@@ -15,7 +17,7 @@ export const Menu = () => {
 			<div className='menu__items'>
 				<div className='menu__item-small small__items'>
 					<div className='small__item small__item-women'>
-						<button className='menu__text'>Women</button>						
+						<NavLink to='/women' className='menu__text'>Women</NavLink>						
 					</div>
 					<div className='small__item small__item-men'>
 						<button className='menu__text'>Men</button>						

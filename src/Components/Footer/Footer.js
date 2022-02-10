@@ -3,44 +3,44 @@ import './Footer.css';
 import { Socialicons } from '../SocialIcons/SocialIcons';
  
 import {Link} from "react-router-dom";
-// import label1 from '../../img/icons/label1.png';
-// import label2 from '../../img/icons/label2.png';
-// import label3 from '../../img/icons/label3.png';
-// import label4 from '../../img/icons/label4.png';
-// import label5 from '../../img/icons/label5.png';
-// import label6 from '../../img/icons/label6.png';
-// import label7 from '../../img/icons/label7.png';
+import label1 from '../../img/Footer/Stripe.png';
+import label2 from '../../img/Footer/AES256.png';
+import label3 from '../../img/Footer/paypal.png';
+import label4 from '../../img/Footer/visa.png';
+import label5 from '../../img/Footer/mastercard.png';
+import label6 from '../../img/Footer/discover.png';
+import label7 from '../../img/Footer/american.png';
 
-// const labels = [
-//   {
-//     path: '/',
-//     img: label1
-//   },
-//   {
-//     path: '/',
-//     img: label2
-//   },
-//   {
-//     path: '/',
-//     img: label3
-//   },
-//   {
-//     path: '/',
-//     img: label4
-//   },
-//   {
-//     path: '/',
-//     img: label5
-//   },
-//   {
-//     path: '/',
-//     img: label6
-//   },
-//   {
-//     path: '/',
-//     img: label7
-//   }
-// ];
+const labels = [
+  {
+    path: '/',
+    img: label1
+  },
+  {
+    path: '/',
+    img: label2
+  },
+  {
+    path: '/',
+    img: label3
+  },
+  {
+    path: '/',
+    img: label4
+  },
+  {
+    path: '/',
+    img: label5
+  },
+  {
+    path: '/',
+    img: label6
+  },
+  {
+    path: '/',
+    img: label7
+  }
+];
 export const Footer = () => {
   return (<footer className="footer">
     <div className="footer__top">
@@ -156,7 +156,17 @@ export const Footer = () => {
     <div className="footer__bottom">
       <div className="footer__bottom-inner">
         <p className="footer__copy">Copyright © 2032 all rights reserved</p>
-       
+        <div className="footer__labels">
+        {
+          labels.map((label, index) =>
+            <Link key={`label${index}`}
+                  to={labels[index].path}
+            >
+              <img src={labels[index].img} alt="icon"/>
+            </Link>
+          )
+        }
+      </div>
         <Link className="footer__clevertec" to="/">Clevertec.ru/training</Link>
       </div>
     </div>

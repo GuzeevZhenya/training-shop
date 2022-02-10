@@ -17,20 +17,22 @@ export default function Nav() {
 
 	return (
 		<div className='nav'>
+		 
 			<div>
-				<p className='nav__logo'>CleverShop</p>
-			</div>
-			<div className='nav__menu'>
-				<ul className='nav__menu-list'>
-					{menu}
-				</ul>
-			</div>
-			<div className='nav__info'>
-				<img src={loop} alt='loop'/>
-				<img src={earth} alt='earth'/>
-				<img src={person} alt='person'/>
-				<img src={buy} alt='buy'/>
-			
+			<p className='nav__logo'>CleverShop</p>
+		</div>
+		<div className='nav__menu'>
+			<ul className='nav__menu-list'>
+				{menu}
+			</ul>
+		</div>
+		<div className='nav__info'>
+			<img src={loop} alt='loop'/>
+			<img src={earth} alt='earth'/>
+			<img src={person} alt='person'/>
+			<img src={buy} alt='buy'/>
+		
+		 
 			</div>
 		</div>
 	)

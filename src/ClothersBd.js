@@ -1,20 +1,20 @@
-import women1 from '../../img/Clothers/Womens-bluePants.jpg';
-import women2 from '../../img/Clothers/Womens-tracksuit.jpg';
-import women3 from '../../img/Clothers/Womens3.jpg';
-import women4 from '../../img/Clothers/Womens4.jpg';
-import women5 from '../../img/Clothers/Womens5.jpg';
-import women6 from '../../img/Clothers/Womens6.jpg';
-import women7 from '../../img/Clothers/Womens7.jpg';
-import women8 from '../../img/Clothers/Womens8.jpg';
+import women1 from './img/Clothers/Womens-bluePants.jpg';
+import women2 from './img/Clothers/Womens-tracksuit.jpg';
+import women3 from './img/Clothers/Womens3.jpg';
+import women4 from './img/Clothers/Womens4.jpg';
+import women5 from './img/Clothers/Womens5.jpg';
+import women6 from './img/Clothers/Womens6.jpg';
+import women7 from './img/Clothers/Womens7.jpg';
+import women8 from './img/Clothers/Womens8.jpg';
 
-import men1 from '../../img/Clothers/Men1.jpg';
-import men2 from '../../img/Clothers/Men2.jpg';
-import men3 from '../../img/Clothers/Men3.jpg';
-import men4 from '../../img/Clothers/Men4.jpg';
-import men5 from '../../img/Clothers/Men5.jpg';
-import men6 from '../../img/Clothers/Men6.jpg';
-import men7 from '../../img/Clothers/Men7.jpg';
-import men8 from '../../img/Clothers/Men8.jpg';
+import men1 from './img/Clothers/Men1.jpg';
+import men2 from './img/Clothers/Men2.jpg';
+import men3 from './img/Clothers/Men3.jpg';
+import men4 from './img/Clothers/Men4.jpg';
+import men5 from './img/Clothers/Men5.jpg';
+import men6 from './img/Clothers/Men6.jpg';
+import men7 from './img/Clothers/Men7.jpg';
+import men8 from './img/Clothers/Men8.jpg';
 
 export const clothersItems = {
   women: [
@@ -24,7 +24,7 @@ export const clothersItems = {
       discount: '',
       price: 30.00,
       text: 'Women`s tracksuit Q109',
-      stars: 3,
+      stars: 2,
     },
     {
       id: 2,
@@ -32,7 +32,7 @@ export const clothersItems = {
       discount: 33,
       price: 33.00,
       text: 'Women`s tracksuit Q109',
-      stars: 3,
+      stars: 5,
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ export const clothersItems = {
       discount: null,
       price: 15.00,
       text: 'Women`s tracksuit Q109',
-      stars: 3,
+      stars: 4,
     },
     {
       id: 4,
@@ -48,7 +48,7 @@ export const clothersItems = {
       discount: 2,
       price: 22.00,
       text: 'Women`s tracksuit Q109',
-      stars: 3,
+      stars: 1,
     },
     {
       id: 5,
@@ -64,7 +64,7 @@ export const clothersItems = {
       discount: 20,
       price: 13.00,
       text: 'Women`s tracksuit Q109',
-      stars: 3,
+      stars: 4,
     },
     {
       id: 7,
@@ -72,7 +72,7 @@ export const clothersItems = {
       discount: 22,
       price: 2.00,
       text: 'Women`s tracksuit Q109',
-      stars: 3,
+      stars: 5,
     },
     {
       id: 8,
@@ -80,7 +80,7 @@ export const clothersItems = {
       discount: 13,
       price: 8.00,
       text: 'Women`s tracksuit Q109',
-      stars: 3,
+      stars: 1,
       newArrivals:true
     },
   ],
@@ -99,7 +99,7 @@ export const clothersItems = {
       discount: 22,
       price: 30.00,
       text: 'Women`s tracksuit Q109',
-      stars: 3,
+      stars: 2,
     },
     {
       id: 3,
@@ -115,7 +115,7 @@ export const clothersItems = {
       discount: 99,
       price: 30.00,
       text: 'Women`s tracksuit Q109',
-      stars: 3,
+      stars: 5,
     },
     {
       id: 5,
@@ -123,7 +123,7 @@ export const clothersItems = {
       discount: 12,
       price: 30.00,
       text: 'Women`s tracksuit Q109',
-      stars: 3,
+      stars: 4,
     },
     {
       id: 6,
@@ -131,7 +131,7 @@ export const clothersItems = {
       discount: 100,
       price: 30.00,
       text: 'Women`s tracksuit Q109',
-      stars: 3,
+      stars: 2,
     },
     {
       id: 7,
@@ -139,7 +139,7 @@ export const clothersItems = {
       discount: 144,
       price: 30.00,
       text: 'Women`s tracksuit Q109',
-      stars: 3,
+      stars: 5,
     },
     {
       id: 8,
@@ -147,7 +147,7 @@ export const clothersItems = {
       discount: 33,
       price: 30.00,
       text: 'Women`s tracksuit Q109',
-      stars: 3,
+      stars: 5,
     },
   ]
 }

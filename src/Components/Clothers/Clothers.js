@@ -1,15 +1,13 @@
 import React from 'react';
-import { clothersItems } from './ClothersBd';
-import { ClotherItem } from './ClotherItem/ClotherItem';
+
+import { ClotherInfo } from './ClotherInfo/ClotherInfo';
 
 
-export const Clothers = () => {
-	
-	
+export const Clothers = ({itemList}) => {
 	return (
 		<div>
-			<ClotherItem itemList={clothersItems.women} clotherName={"Women's"} />
-			<ClotherItem itemList={clothersItems.men} clotherName={"Men's"}/>
+			<ClotherInfo itemList={itemList.women} clotherName={"Women's"} />
+			<ClotherInfo itemList={itemList.men} clotherName={"Men's"}/>
 		</div>
 	)
 }

@@ -1,0 +1,55 @@
+.filter__links{
+	display:flex;
+	justify-content: space-between;
+	background: #F8F8F8;
+	padding:7px 0 ;
+}
+
+.filter__link{
+	position: relative;
+	font-weight: 500;
+	font-size: 11px;
+	line-height: 18px;	
+	opacity: 0.6;
+	padding-right: 21px;
+}
+
+.filter__link--active::before{
+	content: '';
+	position: absolute;
+	background-image: url('../../img/WomenBlock/icon//►.png');
+	background-repeat: no-repeat;
+	width:9px;
+	height:18px;
+	left: -14px;
+	opacity: 1;
+	top: 3px;
+}
+
+.filter__link--active{
+	opacity: 1;
+}
+
+.filter__name{
+	padding: 10px 0 24px 0;
+	text-align: center;
+	background: #F8F8F8;
+}
+
+.filter__links-share{
+	position: relative;
+font-weight: 500;
+font-size: 11px;
+line-height: 18px;
+color: #121212;
+opacity: 0.6;
+}
+.filter__links-share::before{
+	content:'';
+	display: block;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background-image: url('../../img/WomenBlock/icon/Vector.svg');
+	left: -23px;
+}

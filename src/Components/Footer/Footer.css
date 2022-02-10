@@ -94,21 +94,21 @@
 }
 .footer__item--location{
 	padding-left: 20px;
-	/* background-image: url(../../img/icons/footer-location.png); */
+	background-image: url(../../img/Footer//icons/Vector1.svg);
 
 }
 .footer__item--phone{
 	padding-left: 20px;
-	/* background-image: url(../../img/icons/footer-phone.png); */
+	background-image: url(../../img/Footer//icons/Vector4.svg);
 
 }
 .footer__item--time{
 	padding-left: 20px;
-	/* background-image: url(../../img/icons/footer-clock.png); */
+	background-image: url(../../img/Footer//icons/Vector3.svg);
 }
 .footer__item--mail{
 	padding-left: 20px;
-	/* background-image: url(../../img/icons/footer-mail.png); */
+	background-image: url(../../img/Footer//icons/Vector2.svg);
 	background-position: 0 7px;
 }
 

@@ -1,0 +1,25 @@
+
+.card__rating {
+  display: flex;
+}
+
+.card__rating-item {
+  width: 14px;
+  height: 14px;
+}
+
+.card__rating-item > div {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.card__rating-star--fill {
+  background-image: url(../../../../img/Clothers/star1.svg);
+ 
+}
+
+.card__rating-star {
+ 
+  background-image: url(../../../../img/Clothers/star2.svg);
+}
