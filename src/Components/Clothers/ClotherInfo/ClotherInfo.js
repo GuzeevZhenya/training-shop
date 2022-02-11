@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './ClotherInfo.css';
 
 import { Clotheritem } from '../ClotherItem/ClotherItem';
+import { Button } from '../../Button/Button';
 
 const sortingItems = [
   'NEW ARRIVALS',
@@ -13,6 +14,7 @@ const sortingItems = [
 ];
 
 export const ClotherInfo = ({ itemList, clotherName }) => {
+
   
   const [ clothers, setClothers ] = useState(itemList);
   const [ active, isActive ] = useState('');
@@ -39,14 +41,14 @@ export const ClotherInfo = ({ itemList, clotherName }) => {
   return (
     <div className="clother">
       <div className="clother__main">
-        <h1 className="clother__main-title">{clotherName}</h1>
+        <h1 className="clother__main-title">{clotherName}'s</h1>
         <ul className="clother__main-sorting">{sort}</ul>
       </div>
 
       <ul className="clother__list">
         <Clotheritem itemList={clothers}/>
       </ul>
-      <button className="clother__btn">See all</button>
+      <Button buttonLink={clotherName} type='main'/>
     </div>
   );
 };

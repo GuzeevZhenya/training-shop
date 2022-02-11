@@ -36,3 +36,9 @@
 		justify-content: space-between;
 		gap: 28px;
 }
+
+.active-link {
+ font-weight: 600;
+color: #121212;
+
+}

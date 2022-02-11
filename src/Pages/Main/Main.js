@@ -12,7 +12,6 @@ import { clothersItems } from '../../ClothersBd';
 const Main = () => {
   return (
     <div>
-      <InfoBlock />
       <div className="container">
         <Menu />
         <Delivery />

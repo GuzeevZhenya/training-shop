@@ -1,55 +1,123 @@
-.filter__links{
-	display:flex;
-	justify-content: space-between;
-	background: #F8F8F8;
-	padding:7px 0 ;
+.filter__block {
+  margin: 0 auto;
+  background: #f8f8f8;
 }
 
-.filter__link{
-	position: relative;
-	font-weight: 500;
-	font-size: 11px;
-	line-height: 18px;	
-	opacity: 0.6;
-	padding-right: 21px;
+.filter__links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 7px 15px;
+
+  
 }
 
-.filter__link--active::before{
-	content: '';
-	position: absolute;
-	background-image: url('../../img/WomenBlock/icon//►.png');
-	background-repeat: no-repeat;
-	width:9px;
-	height:18px;
-	left: -14px;
-	opacity: 1;
-	top: 3px;
+.filter__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 18px;
+  opacity: 0.6;
+  padding-right: 21px;
 }
 
-.filter__link--active{
-	opacity: 1;
+.filter__link--active::before {
+  content: '';
+  position: absolute;
+  background-image: url('../../img/WomenBlock/icon//►.png');
+  background-repeat: no-repeat;
+  width: 9px;
+  height: 18px;
+  left: -14px;
+  opacity: 1;
+  top: 3px;
 }
 
-.filter__name{
-	padding: 10px 0 24px 0;
-	text-align: center;
-	background: #F8F8F8;
+.filter__link--active {
+  opacity: 1;
 }
 
-.filter__links-share{
-	position: relative;
-font-weight: 500;
-font-size: 11px;
-line-height: 18px;
-color: #121212;
-opacity: 0.6;
+.filter__name h1 {
+  padding: 10px 0 24px 0;
+  text-align: center;
+  background: #f8f8f8;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
-.filter__links-share::before{
-	content:'';
-	display: block;
-	position: absolute;
-	width: 15px;
-	height: 15px;
-	background-image: url('../../img/WomenBlock/icon/Vector.svg');
-	left: -23px;
+
+.filter__links-share {
+  position: relative;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 18px;
+  color: #121212;
+  opacity: 0.6;
+}
+.filter__links-share::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url('../../img/WomenBlock/icon/Vector.svg');
+  left: -23px;
+}
+
+.filter__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 37px 0;
+}
+
+.filter__icons {
+  display: flex;
+  align-items: center;
+}
+
+.filter__icons-text {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+
+  text-transform: uppercase;
+
+  opacity: 0.6;
+}
+
+.filter__category {
+  background-image: url('../../img/Filter-category/Vector.png');
+  width: 24px;
+  height: 22px;
+  margin-right: 17px;
+  border: none;
+  background-color: inherit;
+}
+
+.filter__locations {
+  display: flex;
+  align-items: center;
+}
+
+.filter__extra {
+  width: 24px;
+  height: 24px;
+  background-image: url('../../img/Filter-category/view-list.svg');
+  background-size: cover;
+  background-color: inherit;
+  border: none;
+  margin-right: 32px;
+}
+
+.filter__location {
+  width: 24px;
+  height: 24px;
+  background-image: url('../../img/Filter-category/view-grid.svg');
+  background-size: cover;
+  background-color: inherit;
+  border: none;
 }

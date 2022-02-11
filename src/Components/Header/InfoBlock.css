@@ -26,6 +26,10 @@
 	align-items: center;
 }
 
+.info__block-about div img{
+	margin-right: 10px;
+}
+
 
 .info__block-section span{
 	font-family: Spartan;

@@ -1,6 +1,7 @@
 .menu{
 	display: flex;
 	justify-content: space-between;
+    margin-top: 32px;
 }
 
 .menu__text{
@@ -15,7 +16,7 @@
     cursor: pointer;
     transition: all 500ms ease 0s;
 
-		font-family: Spartan;
+	font-family: Spartan;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 14px;
@@ -99,4 +100,3 @@
 		background-image: url('../../img/Menu/Accessories.jpg');
 		margin-top: 30px;
 }
-

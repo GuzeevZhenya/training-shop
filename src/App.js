@@ -6,6 +6,7 @@ import { Footer } from './Components/Footer/Footer';
 import Main from './Pages/Main/Main';
 
 import { Womenclother } from './Pages/Women/WomenClother';
+import { Manclother, Menclother } from './Pages/Men/MenClother';
 
 function App() {
   return (
@@ -29,8 +30,9 @@ function App() {
       <div className="App">
         <InfoBlock />
         <Nav/>
-          <Route path='/main' component={Main} />
-          <Route path='/women' component={Womenclother} />
+        <Route path='/main' component={Main} />
+        <Route path='/women' component={Womenclother} />
+        <Route path='/men' component={Menclother} />
         <Footer/>
       </div>
     </BrowserRouter>

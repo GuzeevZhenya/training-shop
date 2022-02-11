@@ -1,0 +1,32 @@
+.clother__button{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 96px;
+		margin-top: 18px;
+}
+
+.main__btn {
+ margin: 0 auto;
+  width: 100%;
+  background: #f8f8f8;
+  border: 2px solid #f8f8f8;
+
+  font-size: 13px;
+  line-height: 15px;
+
+  cursor: pointer;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 18px 16px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.person__btn {
+	display: block;
+  width: 231px;
+  height: 50px;
+	align-items: center;
+	margin: 0 auto;
+  background: url('../../img/Button//Square.png');
+}

@@ -7,6 +7,7 @@ import { Womenclother } from '../../Pages/Women/WomenClother';
 export const Menu = () => {
   return (
 		<div className='menu'>
+	 
 			<div className='menu__slider'>
 				<img src={banner} />
 				<div className='menu__text slider__block'>
@@ -20,7 +21,7 @@ export const Menu = () => {
 						<NavLink to='/women' className='menu__text'>Women</NavLink>						
 					</div>
 					<div className='small__item small__item-men'>
-						<button className='menu__text'>Men</button>						
+						<NavLink to='/men' className='menu__text'>Men</NavLink>						
 					</div>
 				</div>
 				<div className='menu__item-big'>
