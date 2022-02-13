@@ -1,0 +1,43 @@
+.product__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__block-smallimage {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__smallImage {
+  margin-bottom: 16px;
+}
+
+.product__size {
+  margin-right: 16px;
+}
+
+.product__color {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.product__color span {
+  opacity: 1;
+  text-transform: capitalize;
+}
+
+.product__size {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #121212;
+  opacity: 0.6;
+}
+
+.product__size span {
+  opacity: 1;
+}

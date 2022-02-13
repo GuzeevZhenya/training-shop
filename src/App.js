@@ -7,6 +7,8 @@ import Main from './Pages/Main/Main';
 
 import { Womenclother } from './Pages/Women/WomenClother';
 import { Manclother, Menclother } from './Pages/Men/MenClother';
+import {Product} from './Pages/Product/product';
+
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
         <Route path='/main' component={Main} />
         <Route path='/women' component={Womenclother} />
         <Route path='/men' component={Menclother} />
+        <Route path='/product' component={Product}/>
         <Footer/>
       </div>
     </BrowserRouter>
