@@ -1,8 +1,6 @@
 import React from 'react';
 import './InfoBlock.css';
-import vector from '../../img/icons/Header/Vector.png';
-import vector2 from '../../img/icons/Header/Vector (6).svg';
-import vector3 from '../../img/icons/Header/Vector (5).svg';
+
 import { Socialicons } from '../SocialIcons/SocialIcons';
 export default function InfoBlock() {
   return (
@@ -10,16 +8,14 @@ export default function InfoBlock() {
       <section className="info__block-section">
         <div className='info__block-about'>
           <div>
-            <img src={vector} alt="phone" />
-            <span>+375 29 100 20 30</span>
+            
+            <span className='info__block--phone'>+375 29 100 20 30</span>
+          </div>
+          <div>            
+            <span className='info__block--adress'>Belarus, Gomel, Lange 17</span>
           </div>
           <div>
-            <img src={vector2} alt="adress" />
-            <span>Belarus, Gomel, Lange 17</span>
-          </div>
-          <div>
-            <img src={vector3} alt="shadule" />
-            <span>All week 24/7</span>
+            <span className='info__block--time'>All week 24/7</span>
           </div>
         </div>
        <Socialicons/>

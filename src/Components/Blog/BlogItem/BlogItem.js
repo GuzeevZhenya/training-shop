@@ -1,17 +1,21 @@
 import React from 'react';
-import './BlogItem.css'
+import './BlogItem.css';
+import {Link} from "react-router-dom";
 
-export const Blogitem = ({title,id,image,text}) => {
-	return (
-		<>
-			<div key={id} className='blog__item' style={{ backgroundImage: `url(${image})` }}>
-				<div className='blog__info'>
-					<h6 className='blog__info-title'>{title}</h6>
-					<p className='blog__info-text'>{text}</p>
-				</div>
-			</div>
-		</>
-	);
-}
+export const BlogItem = ({ data, img }) => {
+	console.log(data,img)
+  return (
+    <article className="blogs__item">
+      <img src={img} alt="blog"/>
+      <div className="blogs__item-content">
+        <h5 className="blogs__item-title">{data.title}</h5>
+        <p className="blogs__item-desc">{data.desc}</p>
+        <Link className="blogs__item-link" to="/">
+          Read more
+        </Link>
+      </div>
+    </article>
+  );
+};
 
  

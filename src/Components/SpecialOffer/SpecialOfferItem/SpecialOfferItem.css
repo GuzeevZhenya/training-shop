@@ -1,9 +1,16 @@
-.special__item-block {
+/* .special__item-block {
   width: 540px;
   height: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
+} */
+
+.special__item{
+  margin-right: 30px;
+}
+.special__item:last-child{
+  margin-right: 0;
 }
 
 .special__item-info {

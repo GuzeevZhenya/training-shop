@@ -27,6 +27,11 @@ body {
   overflow-x: hidden;
 }
 
+img{
+  width: 100%;
+   
+}
+
 ul li {
   list-style: none;
 }
@@ -46,4 +51,8 @@ button {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.app{
+  margin:  0 auto;
 }

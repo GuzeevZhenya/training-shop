@@ -1,12 +1,20 @@
 .clother {
-  margin-top: 105px;
+  margin-top: 73px;
   margin-bottom: 45px;
+}
+
+.clother__item{
+  position: relative;
+  width: 255px;
+  height: 378px;
 }
 
 .clother__main {
   display: flex;
   justify-content: space-between;
   margin-bottom: 45px;
+  flex-wrap: wrap;
+
 }
 
 .clother__main-title {
@@ -20,10 +28,11 @@
 
 .clother__main ul {
   display: flex;
+  align-items: center;
 }
 
 .clother__main li {
-  margin-right: 32px;
+  margin: 0px 16px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -49,4 +58,21 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 825px) {
+  .clother__list{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .clother__item{
+    margin: 0 15px 30px 15px;
+  }
+}
 
+@media (max-width: 790px) {
+  .clother__main{
+    justify-content: center;
+  }
+  .clother__main-title{
+    margin-bottom: 15px;
+  }
+}

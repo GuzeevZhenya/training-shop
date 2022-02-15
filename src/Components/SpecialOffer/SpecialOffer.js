@@ -16,7 +16,7 @@ export const SpecialOffer = () => {
 		<>
 			<SpecialOfferItem id={item.id} image={item.img} title={item.title} text={item.text}/>
 		</>
-	
+
 	))
 
 	return (

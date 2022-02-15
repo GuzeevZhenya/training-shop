@@ -1,40 +1,55 @@
-.delivery{
-	display:flex;
-	justify-content: space-between;
+.hero__footer{
 	padding: 32px 0;
+	display: flex;
+	justify-content: space-between;
+	gap: 5px;
 }
 
-.delive__block{
-	display:flex;
+.hero__footer-item{
+	position: relative;
+	 padding-left: 48px;
+	width: 350px;
+}
+.hero__footer-item:before{
+	position: absolute;
+	left: 0;
+	content: "";
+	width: 40px;
+	height: 40px;
+
+}
+.hero__footer-item--shipping:before{
+	background: url(../../img/Delivery/icons/car.svg) no-repeat;
+
+}
+.hero__footer-item--return:before{
+	background: url(../../img/Delivery/icons/refresh.svg) no-repeat;
+}
+.hero__footer-item--support:before{
+	background: url(../../img/Delivery/icons/circle.svg) no-repeat;
 }
 
-.delivery__img{
-	margin-right: 13px;
+.hero__footer-title{
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 13px;
+	padding-bottom: 4px;
 }
+.hero__footer-desc{
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 22px;
+	opacity: 0.9;
+}
+@media screen and (max-width: 600px){
+	.hero__footer {
+			padding: 20px 0;
+			flex-direction: column;
+			gap: 10px;
+			align-items: center;
+	}
+	.hero__footer-item{
 
-.delivery__title{
-	font-family: Spartan;
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 13px;
-display: flex;
-align-items: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-}
-
-.delivery__info{
-	display:flex;
-	flex-direction: column;
-}
-
-.delivery__text{
-	font-family: Spartan;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 22px;
-color: #121212;
-opacity: 0.9;
-}
+			width: 320px;
+	}
+	}

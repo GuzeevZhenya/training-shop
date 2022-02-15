@@ -1,8 +1,8 @@
 import React from 'react';
-import vector4 from '../../img/icons/Header/Vector (4).svg';
-import vector5 from '../../img/icons/Header/Vector (3).svg';
-import vector6 from '../../img/icons/Header/Vector (2).svg';
-import vector7 from '../../img/icons/Header/Vector (1).svg';
+import vector4 from '../../img/icons/Header/facebook.svg';
+import vector5 from '../../img/icons/Header/twitter.svg';
+import vector6 from '../../img/icons/Header/insta.svg';
+import vector7 from '../../img/icons/Header/pa.svg';
 
 import './SocialIcons.css'
 

@@ -40,5 +40,21 @@
 .active-link {
  font-weight: 600;
 color: #121212;
-
 }
+
+
+@media (max-width: 955px) {
+	.nav{
+		flex-direction: column;
+	}
+	.nav__menu{
+		margin: 15px 0 ;
+	}
+	.nav__menu-item{
+		margin: 0 10px;
+	}
+	
+}
+
+
+@media only screen and (min-width : 768px) and (max-width : 1023px) {}

@@ -3,6 +3,9 @@ import banner from '../../img/Menu/Banner.jpg';
 import './Menu.css';
 import { BrowserRouter, Route, NavLink } from 'react-router-dom';
 import { Womenclother } from '../../Pages/Women/WomenClother';
+import Women from '../../img/Menu/Women.png';
+import Men from '../../img/Menu/Men.png'
+import Accessories from '../../img/Menu/Accessories.jpg'
 
 export const Menu = () => {
   return (
@@ -17,14 +20,17 @@ export const Menu = () => {
 			</div>
 			<div className='menu__items'>
 				<div className='menu__item-small small__items'>
-					<div className='small__item small__item-women'>
-						<NavLink to='/women' className='menu__text'>Women</NavLink>						
+					<div className='menu__item small__item small__item-women'>
+						<img src={Women}/>
+						<NavLink to='/women' className='menu__text'>Women</NavLink>			
 					</div>
-					<div className='small__item small__item-men'>
+					<div className='menu__item small__item small__item-men'>
+						<img src={Men}/>
 						<NavLink to='/men' className='menu__text'>Men</NavLink>						
 					</div>
 				</div>
-				<div className='menu__item-big'>
+				<div className='menu__item menu__item-big'>
+						<img src={Accessories}/>
 						<button className='menu__text'>Accessories</button>
 				</div>
 			</div>

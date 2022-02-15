@@ -29,7 +29,7 @@ function App() {
     //   </div>
     // </BrowserRouter>
     <BrowserRouter>
-      <div className="App">
+      <div className="app">
         <InfoBlock />
         <Nav/>
         <Route path='/main' component={Main} />

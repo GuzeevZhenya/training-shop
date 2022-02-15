@@ -92,3 +92,21 @@
   color: #121212;
 }
 
+
+@media screen and (max-width: 960px){
+  .banner__block::before{
+    left: calc((100% - 900px)/2);
+  }
+  .banner__block::after{
+    right: calc((100% - 770px)/2);
+  }
+}
+
+@media screen and (max-width: 767px){
+  .banner__block::before{
+    display: none;
+  }
+  .banner__block::after{
+    display: none;
+  }
+}

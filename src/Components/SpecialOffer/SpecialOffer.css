@@ -2,5 +2,12 @@
 	display:flex;
 	justify-content: space-between;
 	margin-bottom: 96px;
+	/* flex-wrap: wrap; */
 }
  
+@media (max-width: 770px) {
+	.special__offer-items{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}

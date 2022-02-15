@@ -1,102 +1,125 @@
-.menu{
-	display: flex;
-	justify-content: space-between;
-    margin-top: 32px;
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  /* flex-wrap: wrap; */
+  align-items: center;
 }
 
-.menu__text{
-	background: rgb(255, 255, 255);
-    padding: 13px 24px;
-    overflow: hidden;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;    
-    justify-content: center;
-    border: none;
-    cursor: pointer;
-    transition: all 500ms ease 0s;
-
-	font-family: Spartan;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 14px;
-	line-height: 22px;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
+.menu__item-small img {
+  position: relative;
 }
 
-.menu__slider{
-	position: relative;
+.menu__text {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  padding: 13px 24px;
+  overflow: hidden;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: all 500ms ease 0s;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-.menu__item-small{
-	display: flex;
-	justify-content: space-between;
+.menu__slider {
+  position: relative;
+  margin-right: 30px;
+}
+.menu__slider img {
+  display: block;
 }
 
-.slider__block{
-	
-	background: rgb(255, 255, 255);
-    height: 100px;
-    width: 289px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    position: absolute;
+.menu__item-small {
+  display: flex;
+  justify-content: space-between;
+}
+.small__item:last-child {
+  margin-left: 30px;
 }
 
-.menu__text-small{
-	font-weight: 600;
-    font-size: 12px;
-    line-height: 13px;
-    color: rgba(18, 18, 18, 0.4);
-    text-transform: uppercase;
+.slider__block {
+  background: rgb(255, 255, 255);
+  height: 100px;
+  width: 289px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
 }
 
-.menu__text-big{
-	font-weight: 600;
-	font-size: 22px;
-	line-height: 25px;
-	color: rgb(18, 18, 18);
-	font-style: normal;
-	text-transform: uppercase;
-}
- 
-.small__item-women{
-	background-image: url('../../img/Menu/Women.png');
-	display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 255px;
-    height: 200px;
-    background-size: cover;
+.menu__text-small {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 13px;
+  color: rgba(18, 18, 18, 0.4);
+  text-transform: uppercase;
 }
 
-.small__item-men{
-	background-image: url('../../img/Menu/Men.png');
-	display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 255px;
-    height: 200px;
-    background-size: cover;
+.menu__text-big {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 25px;
+  color: rgb(18, 18, 18);
+  font-style: normal;
+  text-transform: uppercase;
 }
 
-.menu__item-big{
-		display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 540px;
-    height: 260px;
-    background-size: cover;
-		background-image: url('../../img/Menu/Accessories.jpg');
-		margin-top: 30px;
+.small__item-women {
+  /* background-image: url('../../img/Menu/Women.png'); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 255px;
+    height: 200px; */
+  background-size: cover;
+}
+
+.small__item-men {
+  /* background-image: url('../../img/Menu/Men.png'); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 255px;
+    height: 200px; */
+  background-size: cover;
+}
+
+.menu__item-big {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 540px;
+    height: 260px; */
+  background-size: cover;
+  /* background-image: url('../../img/Menu/Accessories.jpg'); */
+  margin-top: 30px;
+}
+
+
+@media (max-width: 751px) {
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu__slider{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
 }

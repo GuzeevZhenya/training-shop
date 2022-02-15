@@ -1,34 +1,57 @@
 import React from 'react';
-import { Blogitem } from './BlogItem/BlogItem';
+import { BlogItem } from './BlogItem/BlogItem';
 import './Blog.css';
+import blogs1Img from "../../img/Blog/First.jpg";
+import blogs2Img from "../../img/Blog/Second.jpg";
+import blogs3Img from "../../img/Blog/Third.jpg";
+const blogsImages = [blogs1Img, blogs2Img, blogs3Img];
 
-import first from '../../img/Blog/First.jpg'
-import second from '../../img/Blog/Second.jpg'
-import third from '../../img/Blog/Third.jpg'
 
+const blogData = [
+	{
+		"id": "0",
+		"title": "The Easiest Way to Break",
+		"desc": "But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor"
+	},
+	{
+		"id": "1",
+		"title": "Wedding Season",
+		"desc": "But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor"
+	},
+	{
+		"id": "2",
+		"title": "Recent Favorites On Repeat",
+		"desc": "But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor"
+	}
+]
+  
 
-const BlogItems = [
-	{ id: 1, title: 'The Easiest Way to Break', img:first , text: 'But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor' },
-	{ id: 2, title: 'Wedding Season', img:second , text: 'But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor' },
-	{ id: 3, title: 'Recent Favorites On Repeat', img: third , text: 'But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor' }
-];
+ 
+
 
 export const Blog = () => {
-	const blogItem = BlogItems.map(item => (
-		<>
-			<Blogitem id={item.id} title={item.title} text={item.text} image={item.img}/>
-		</>
-	))
-	return (
-		<div className='container'>
-			<div className='blog'>
-				<h1 className="blog__title">Latest from Blog</h1>
-				<a className="blog__link">See all</a>
-			</div>
-		
-			<div className='blog__items'>
-					{blogItem}
-				</div>
-			</div>
-	)
-}
+  return (
+    <div className="blogs__wrapper">
+      <div className="container">
+        <div className="blogs__inner">
+          <div className="blogs__head">
+            <h3 className="blogs__title">LATEST FROM BLOG</h3>
+            <button className="blogs__btn">SEE ALL</button>
+
+          </div>
+          <div className="blogs__list">
+            {
+              blogData.map((blog, index) =>
+                <BlogItem
+                  key={`blog${index}`}
+                  data={blogData[index]}
+                  img={blogsImages[index]}
+                />
+              )
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
