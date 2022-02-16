@@ -1,0 +1,65 @@
+.related__wrapper {
+	padding: 96px 0;
+}
+
+.related__list{
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	 
+}
+
+.related__head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 48px;
+}
+
+.related__title {
+	font-weight: 600;
+	font-size: 22px;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+
+}
+
+.related__btn {
+	width: 40px;
+	height: 40px;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+	transition: 0.3s ease-in-out;
+}
+
+.related__btn:hover {
+
+	opacity: 1;
+}
+
+.related__btn-prev {
+	background-image: url(../../img/Product/chevron-left.svg);
+
+}
+
+.related__btn-next {
+	background-image: url(../../img/Product/chevron-right.svg);
+}
+@media (max-width: 640px) {
+	.related__list{
+	 justify-content: center;
+}
+}
+
+
+@media screen and (max-width: 500px) {
+	.related__wrapper {
+			padding: 48px 0;
+	}
+
+	.related__title {
+			font-size: 18px;
+	}
+
+}

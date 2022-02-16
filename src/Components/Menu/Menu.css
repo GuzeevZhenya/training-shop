@@ -5,6 +5,9 @@
   /* flex-wrap: wrap; */
   align-items: center;
 }
+.menu img{
+  width: 100%;
+}
 
 .menu__item-small img {
   position: relative;

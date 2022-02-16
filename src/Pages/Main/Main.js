@@ -6,7 +6,7 @@ import { Delivery } from '../../Components/Delivery/Delivery';
 import { Clothers } from '../../Components/Clothers/Clothers';
 import { SpecialOffer } from '../../Components/SpecialOffer/SpecialOffer';
 import { SpecialBanner } from '../../Components/SpecialBanner/SpecialBanner';
-import { Blog } from '../../Components/Blog/Blog';
+import { Blogs } from '../../Components/Blog/Blogs';
 import { clothersItems } from '../../ClothersBd';
 
 const Main = () => {
@@ -19,7 +19,7 @@ const Main = () => {
         <SpecialOffer />
       </div>
       <SpecialBanner />
-      <Blog />
+      <Blogs />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { BlogItem } from './BlogItem/BlogItem';
-import './Blog.css';
+import './Blogs.css';
 import blogs1Img from "../../img/Blog/First.jpg";
 import blogs2Img from "../../img/Blog/Second.jpg";
 import blogs3Img from "../../img/Blog/Third.jpg";
@@ -29,7 +29,7 @@ const blogData = [
  
 
 
-export const Blog = () => {
+export const Blogs = () => {
   return (
     <div className="blogs__wrapper">
       <div className="container">

@@ -1,60 +1,93 @@
-.nav{
-	width: 100%;
+.nav {
+  width: 100%;
   max-width: 1140px;
   margin: 0 auto;
-	display:flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 15px 15px 19px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px 19px 15px;
 }
 
-.nav__menu-list{
-	display:flex;
-	margin: 0;
+.nav__menu-list {
+  display: flex;
+  margin: 0;
 }
 
-.nav__menu-item{
-	list-style: none;
-	margin: 0 16px;
-	font-family: Spartan;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 16px;
-	color: #121212;
+.nav__menu-item {
+  list-style: none;
+  margin: 0 16px;
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #121212;
 }
 
-.nav__logo{
-		font-family: "Playfair Display SC", serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
+.nav__logo {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
 }
 
-.nav__info{
-	display: flex;
-		justify-content: space-between;
-		gap: 28px;
+.nav__info {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
 }
 
 .active-link {
- font-weight: 600;
-color: #121212;
+  font-weight: 600;
+  color: #121212;
 }
 
+.navbar__navigation-btn__mobile {
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+
+.navbar__navigation-btn__mobile--active {
+  display: block;
+  justify-content: flex-end;
+}
+
+.navbar__navigation-btn__mobile img {
+  cursor: pointer;
+  width: 80%;
+}
 
 @media (max-width: 955px) {
-	.nav{
-		flex-direction: column;
-	}
-	.nav__menu{
-		margin: 15px 0 ;
-	}
-	.nav__menu-item{
-		margin: 0 10px;
-	}
-	
+  .nav {
+    flex-direction: column;
+  }
+  .nav__menu {
+    margin: 15px 0;
+  }
+  .nav__menu-item {
+    margin: 0 10px;
+  }
 }
 
+@media (max-width: 670px) {
+  .nav__menu {
+    width: 100%;
+  }
+  .nav__menu-list {
+    display: none;
+  }
+  .nav__menu-list--active {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav__menu-item {
+    width: 100%;
+    font-size: 16px;
+    margin: 5px 0;
+    text-align: center;
+  }
+}
 
-@media only screen and (min-width : 768px) and (max-width : 1023px) {}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
