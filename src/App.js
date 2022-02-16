@@ -12,24 +12,9 @@ import {Product} from './Pages/Product/product';
 
 function App() {
   return (
-    // <BrowserRouter>
-    //   <div className="App">
-    //     <InfoBlock />
-    //     <div className="container">
-    //       <Nav />
-    //       <Menu />
-    //       <Delivery />
-    //       <Clothers itemList={clothersItems}/>
-    //       <SpecialOffer />
-    //     </div>
-    //     <SpecialBanner />
-    //     <Blog />
-    //     <Footer />
-    //     <Route path='/women' component={Womenclother}/>
-    //   </div>
-    // </BrowserRouter>
+    
     <BrowserRouter>
-      <div className="app">
+      <div className="app"  data-test-id="app">
         <InfoBlock />
         <Nav/>
         <Route path='/main' component={Main} />

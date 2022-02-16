@@ -8,9 +8,9 @@ import ClotherFilterLinks from '../../Components/Clother-filter/Clother-filter-l
 import { Button } from '../../Components/Button/Button';
 
 
-export const Womenclother = ({ itemList }) => {
+export const Womenclother = ({ itemList,productType }) => {
   return (
-    <div className="women__block">
+    <div className="women__block"  data-test-id={`products-page-${productType}`} >
       <ClotherFilterLinks name={'Women'}/>
       <div className="container">
         <ClotherFilter />
