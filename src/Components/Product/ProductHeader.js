@@ -23,7 +23,7 @@ const MyComponent = () => {
           </div>
           <h3 className="product-header__title">Women's tracksuit Q109</h3>
           <div className="product-header__item">
-            <button className="categories__share">Share</button>
+            <button className="product-header__share">Share</button>
             <div className="product-header__article">
               <div className="product-header__article-item">
                 <span>SKU:</span>

@@ -4,7 +4,6 @@ import './Clother-filter.css';
 const ClotherFilter = ({ name }) => {
   return (
     <div className='filter'>
-     
       <div className="filter__buttons">
         <div className="filter__icons">
           <input type="button" className="filter__category"/>

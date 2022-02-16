@@ -1,29 +1,58 @@
-import React from 'react';
-import './ProductSection.css';
-import { Clotheritem } from '../Clothers/ClotherItem/ClotherItem'
-import { clothersItems } from '../../ClothersBd';
+import React from "react";
 
-export const ProductSection = ({data, img}) => {
+import main from "../../img/Product/Main.png";
+import "./ProductSection.css";
+
+import small1 from "../../img/Product/smallvers1.png";
+import small2 from "../../img/Product/smallvers2.png";
+import small3 from "../../img/Product/smallvers3.png";
+import small4 from "../../img/Product/smallvers4.png";
+
+import color1 from "../../img/Product/color1.png";
+import color2 from "../../img/Product/color2.png";
+import color3 from "../../img/Product/color3.png";
+import color4 from "../../img/Product/color4.png";
+
+import { Productselect } from "./ProductSelect";
+
+const productDb = {
+  small: [small1, small2, small3, small4],
+  color: [
+    {
+      id: 1,
+      img: color1,
+      color: "blue",
+    },
+    {
+      id: 2,
+      img: color2,
+      color: "red",
+    },
+    {
+      id: 3,
+      img: color3,
+      color: "black",
+    },
+    {
+      id: 4,
+      img: color4,
+      color: "white",
+    },
+  ],
+  size: ["XS", "S", "M", "L"],
+};
+
+export const ProductSection = () => {
+  const smallImage = productDb.small.map((item) => (
+    <img className="product__smallImage" src={item} alt={item} />
+  ));
   return (
-    <div className="container">
-      <div className="related__wrapper">
-        <div className="related__head">
-          <h3 className="related__title">RELATED PRODUCTS</h3>
-          <div className="related__buttons">
-            <button className="related__btn related__btn-prev"/>
-            <button className="related__btn related__btn-next"/>
-          </div>
-        </div>
-
-        <div className="related__list">
-          <Clotheritem
-          itemList={clothersItems.men}
-          />
-        </div>
-
+    <div className="product__block">
+      <div className="product__block-smallimage">{smallImage}</div>
+      <div className="product__block-main">
+        <img src={main} />
       </div>
+      <Productselect />
     </div>
   );
 };
-
- 

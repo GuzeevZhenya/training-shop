@@ -1,67 +1,59 @@
-.product__block {
+.related__wrapper {
+  padding: 96px 0;
+}
+
+.related__list {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.product__block-smallimage {
+.related__head {
   display: flex;
-  flex-direction: column;
-  margin-right: 15px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
 }
 
-.product__smallImage {
-  margin-bottom: 16px;
-  width: 94px;
-  height: 114px;
+.related__title {
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-.product__block-main {
-  margin-right: 30px;
+.related__btn {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  transition: 0.3s ease-in-out;
 }
 
-@media (max-width: 1150px) {
-  .product__block {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  .product-select__wrapper {
+.related__btn:hover {
+  opacity: 1;
+}
+
+.related__btn-prev {
+  background-image: url(../../img/Product/chevron-left.svg);
+}
+
+.related__btn-next {
+  background-image: url(../../img/Product/chevron-right.svg);
+}
+@media (max-width: 640px) {
+  .related__list {
     justify-content: center;
   }
 }
 
-@media (max-width: 620px) {
-  .product__block-smallimage {
-    display: none;
+@media screen and (max-width: 500px) {
+  .related__wrapper {
+    padding: 48px 0;
+  }
+
+  .related__title {
+    font-size: 18px;
   }
 }
-
-/* .product__size {
-  margin-right: 16px;
-}
-
-.product__color {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #121212;
-}
-
-.product__color span {
-  opacity: 1;
-  text-transform: capitalize;
-}
-
-.product__size {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #121212;
-  opacity: 0.6;
-}
-
-.product__size span {
-  opacity: 1;
-} */

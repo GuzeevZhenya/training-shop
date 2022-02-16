@@ -1,74 +1,130 @@
 .product-header {
-    min-height: 102px;
-    background-color: var(--cornflower_blue-color);
-    margin-bottom: 32px;
+  min-height: 102px;
+  background-color: var(--cornflower_blue-color);
+  margin-bottom: 32px;
 }
 
 .product-header__inner {
-    padding: 7px 0;
-    min-height: 102px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 7px 0;
+  min-height: 102px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .product-header__item {
-    flex-basis: 33%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
 }
 
 .product-header__title {
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 36px;
-    letter-spacing: 0.06em;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.product-header__share {
+  position: relative;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 18px;
+  color: #121212;
+  opacity: 0.6;
+  text-align: end;
+}
+.product-header__share::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url("../../img/WomenBlock/icon/Vector.svg");
+  right: 45px;
 }
 
 .product-header__reviews {
-    display: flex;
-    gap: 6px;
+  display: flex;
+  gap: 6px;
 }
 
 .product-header__desc {
-    font-weight: 500;
-    font-size: 11px;
-    opacity: 0.6;
+  font-weight: 500;
+  font-size: 11px;
+  opacity: 0.6;
 }
-.product-header__item .categories__share{
-    margin-right: 0;
-    margin-left: auto;
+.product-header__item .categories__share {
+  margin-right: 0;
+  margin-left: auto;
 }
 .product-header__article {
-    margin-right: 0;
-    margin-left: auto;
+  margin-right: 0;
+  margin-left: auto;
+  display: flex;
+  gap: 24px;
+  font-size: 11px;
+  line-height: 18px;
+}
+.product-header__article-item span:first-child {
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.product-header__article-item span:last-child {
+  font-weight: 700;
+  opacity: 1;
+}
+
+.crumbs{
     display: flex;
-    gap: 24px;
-    font-size: 11px;
-    line-height: 18px;
-}
-.product-header__article-item span:first-child{
-    font-weight: 500;
-    opacity: 0.6;
+    flex-direction: row;
 }
 
-
-.product-header__article-item span:last-child{
-    font-weight: 700;
-    opacity: 1;
+.crumbs__link {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+    
 }
 
-@media screen and (max-width: 767px){
-    .product-header__inner {
-      flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-    }
+.crumbs__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 18px;
+  opacity: 0.6;
+  /* padding-right: 21px; */
 }
-@media screen and (max-width: 500px){
-    .product-header__title {
-        font-size: 22px;
-    }
+
+.crumbs__link--active::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/WomenBlock/icon//►.png");
+  background-repeat: no-repeat;
+  width: 9px;
+  height: 18px;
+  left: -14px;
+  opacity: 1;
+  top:7px;
+}
+
+.crumbs__link--active {
+  opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .product-header__inner {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .product-header__title {
+    font-size: 22px;
+  }
 }
