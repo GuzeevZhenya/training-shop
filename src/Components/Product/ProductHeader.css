@@ -77,9 +77,9 @@
   opacity: 1;
 }
 
-.crumbs{
-    display: flex;
-    flex-direction: row;
+.crumbs {
+  display: flex;
+  flex-direction: row;
 }
 
 .crumbs__link {
@@ -88,7 +88,6 @@
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
-    
 }
 
 .crumbs__link {
@@ -100,16 +99,20 @@
   /* padding-right: 21px; */
 }
 
-.crumbs__link--active::before {
+.crumbs__link::after {
   content: "";
   position: absolute;
   background-image: url("../../img/WomenBlock/icon//►.png");
   background-repeat: no-repeat;
   width: 9px;
   height: 18px;
-  left: -14px;
+  right: 10px;
   opacity: 1;
-  top:7px;
+  top: 5px;
+}
+
+.crumbs__link--active::after {
+  display: none;
 }
 
 .crumbs__link--active {

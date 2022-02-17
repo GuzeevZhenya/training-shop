@@ -25,8 +25,9 @@ function App() {
           <Route exact path="/women" component={Womenclother} />
           <Route exact path="/men" component={Menclother} />
           
-          <Route exact path="/men/:id" component={Product} />
-          <Route exact path="/women/:id" component={Product} />
+          <Route exact path="/:url/:id" component={Product} />
+          {/* <Route exact path="" component={Product} />
+         */}
           <Route component={Main} />
         </Switch>
 
