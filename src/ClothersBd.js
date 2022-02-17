@@ -23,7 +23,7 @@ export const clothersItems = {
       img: women1,
       discount: '',
       price: 30.00,
-      text: 'Women`s tracksuit Q109',
+      text: 'Women`s tracksuit Q101',
       stars: 2,
     },
     {
@@ -31,7 +31,7 @@ export const clothersItems = {
       img: women2,
       discount: 33,
       price: 33.00,
-      text: 'Women`s tracksuit Q109',
+      text: 'Women`s tracksuit Q102',
       stars: 5,
     },
     {
@@ -39,7 +39,7 @@ export const clothersItems = {
       img: women3,
       discount: null,
       price: 15.00,
-      text: 'Women`s tracksuit Q109',
+      text: 'Women`s tracksuit Q103',
       stars: 4,
     },
     {
@@ -47,7 +47,7 @@ export const clothersItems = {
       img: women4,
       discount: 2,
       price: 22.00,
-      text: 'Women`s tracksuit Q109',
+      text: 'Women`s tracksuit Q104',
       stars: 1,
     },
     {
@@ -55,7 +55,7 @@ export const clothersItems = {
       img: women5,
       discount: 13,
       price: 6.00,
-      text: 'Women`s tracksuit Q109',
+      text: 'Women`s tracksuit Q105',
       stars: 3,
     },
     {
@@ -63,7 +63,7 @@ export const clothersItems = {
       img: women6,
       discount: 20,
       price: 13.00,
-      text: 'Women`s tracksuit Q109',
+      text: 'Women`s tracksuit Q106',
       stars: 4,
     },
     {
@@ -71,7 +71,7 @@ export const clothersItems = {
       img: women7,
       discount: 22,
       price: 2.00,
-      text: 'Women`s tracksuit Q109',
+      text: 'Women`s tracksuit Q107',
       stars: 5,
     },
     {
@@ -79,7 +79,7 @@ export const clothersItems = {
       img: women8,
       discount: 13,
       price: 8.00,
-      text: 'Women`s tracksuit Q109',
+      text: 'Women`s tracksuit Q108',
       stars: 1,
       newArrivals:true
     },
@@ -90,7 +90,7 @@ export const clothersItems = {
       img: men1,
       discount: 44,
       price: 30.00,
-      text: 'Women`s tracksuit Q109',
+      text: 'Women`s tracksuit Q110',
       stars: 3,
     },
     {
@@ -98,7 +98,7 @@ export const clothersItems = {
       img: men2,
       discount: 22,
       price: 30.00,
-      text: 'Women`s tracksuit Q109',
+      text: 'Women`s tracksuit Q111',
       stars: 2,
     },
     {
@@ -106,7 +106,7 @@ export const clothersItems = {
       img: men3,
       discount: 43,
       price: 30.00,
-      text: 'Women`s tracksuit Q109',
+      text: 'Women`s tracksuit Q112',
       stars: 3,
     },
     {
@@ -114,7 +114,7 @@ export const clothersItems = {
       img: men4,
       discount: 99,
       price: 30.00,
-      text: 'Women`s tracksuit Q109',
+      text: 'Women`s tracksuit Q113',
       stars: 5,
     },
     {
@@ -122,7 +122,7 @@ export const clothersItems = {
       img: men5,
       discount: 12,
       price: 30.00,
-      text: 'Women`s tracksuit Q109',
+      text: 'Women`s tracksuit Q114',
       stars: 4,
     },
     {
@@ -130,7 +130,7 @@ export const clothersItems = {
       img: men6,
       discount: 100,
       price: 30.00,
-      text: 'Women`s tracksuit Q109',
+      text: 'Women`s tracksuit Q115',
       stars: 2,
     },
     {
@@ -138,7 +138,7 @@ export const clothersItems = {
       img: men7,
       discount: 144,
       price: 30.00,
-      text: 'Women`s tracksuit Q109',
+      text: 'Women`s tracksuit Q116',
       stars: 5,
     },
     {
@@ -146,7 +146,7 @@ export const clothersItems = {
       img: men8,
       discount: 33,
       price: 30.00,
-      text: 'Women`s tracksuit Q109',
+      text: 'Women`s tracksuit Q117',
       stars: 5,
     },
   ]

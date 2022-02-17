@@ -3,7 +3,10 @@ import {Link} from "react-router-dom";
 import { Star } from '../Clothers/ClotherInfo/Star/Star';
  
 import './ProductHeader.css'
-const MyComponent = () => {
+const MyComponent = ({ data,id,nameProduct }) => {
+  console.log(data);
+  const name = data.filter(item=>item.id == id);
+  console.log(name[0].text)
   return (
     <div className="product-header">
       <div className="container">
@@ -12,9 +15,9 @@ const MyComponent = () => {
             <div className="crumbs">
               <Link className="crumbs__link" to="/">Home</Link>
               <span className="crumbs__arrow"/>
-              <Link className="crumbs__link" to="/women">Women</Link>
+              <Link className="crumbs__link" to={`/${nameProduct}`} >Women</Link>
               <span className="crumbs__arrow"/>
-              <span className="crumbs__link crumbs__link--active">Women's tracksuit Q109</span>
+              <span className="crumbs__link crumbs__link--active">{name[0].text}</span>
             </div>
             <div className="product-header__reviews">
               <Star star="2"/>
