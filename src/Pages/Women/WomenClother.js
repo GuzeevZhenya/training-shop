@@ -15,7 +15,7 @@ export const Womenclother = ({ itemList,productType }) => {
       <div className="container">
         <ClotherFilter />
         <ul className="women__items">
-          <Clotheritem itemList={clothersItems.women} />
+          <Clotheritem itemList={clothersItems.women} clotherName={'women'}/>
         </ul>
         <Button type="/women"/>
       </div>

@@ -42,7 +42,8 @@ const labels = [
   }
 ];
 export const Footer = () => {
-  return (<footer className="footer">
+  return (
+    <footer className="footer" data-test-id="footer">
     <div className="footer__top">
       <div className="footer__top-inner">
         <form action="" className="footer__form">

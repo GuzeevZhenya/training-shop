@@ -9,13 +9,13 @@ import openMenu from '../../img/icons/Header/open-menu.svg';
 import closeMenu from '../../img/icons/Header/close-menu.svg';
 
 const navMenu = [
-  { name: 'About Us', link: '/about' },
-  { name: 'Women', link: '/women' },
-  { name: 'Men', link: '/men' },
-  { name: 'Beauty', link: '/beauty' },
-  { name: 'Accessories', link: '/accessories' },
-  { name: 'Blog', link: '/blog' },
-  { name: 'Contact', link: '/contact' },
+  { id:1,name: 'About Us', link: 'about' },
+  { id:2,name: 'Women', link: 'women' },
+  { id:3,name: 'Men', link: 'men' },
+  { id:4,name: 'Beauty', link: 'beauty' },
+  { id:5,name: 'Accessories', link: 'accessories' },
+  { id:6,name: 'Blog', link: 'blog' },
+  { id:7,name: 'Contact', link: 'contact' },
 ];
 
 export default function Nav() {
@@ -23,7 +23,7 @@ export default function Nav() {
   const [ button, setButton ] = useState(true);
 
   const menu = navMenu.map((item, index) => (
-    <NavLink to={item.link} activeClassName="active-link" className="nav__menu-item" key={index}>
+    <NavLink to={`/${item.link}`} activeClassName="active-link" className="menu-item" key={item.id}>
       {item.name}
     </NavLink>
   ));
@@ -46,9 +46,9 @@ export default function Nav() {
   window.addEventListener('resize', showButton);
 
   return (
-    <div className="nav">
+    <div className="nav" data-text-id="menu">
       <div>
-        <NavLink to="/main" className="nav__logo">
+        <NavLink to="/main" className="header-nav-logo" data-test-id="header-logo-link">
           CleverShop
         </NavLink>
       </div>

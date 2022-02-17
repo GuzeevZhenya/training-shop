@@ -4,12 +4,16 @@ import { NavLink } from "react-router-dom";
 import { Star } from "../ClotherInfo/Star/Star";
 import "./ClotherItem.css";
 
-export const Clotheritem = ({ itemList }) => {
+export const Clotheritem = ({ itemList, clotherName }) => {
+  console.log(clotherName)
+
   const [clothers, setClothers] = useState(itemList);
+
+  console.log(clothers)
   return (
     <>
       {clothers.map((item) => (
-        <NavLink to='/product' className="clother__item" key={item.id}>
+        <NavLink to={`/${clotherName}/${item.id}`} className="clother__item" key={item.id}>
           <img src={item.img} alt={item.name} />
           {item.discount && (
             <span className="clother__discount">{-item.discount + "%"}</span>

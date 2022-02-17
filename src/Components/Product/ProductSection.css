@@ -35,6 +35,12 @@
     display: none;
   }
 }
+@media (max-width: 470px) {
+  .product__block-main img {
+    width: 100%;
+  }
+}
+
 
 /* .product__size {
   margin-right: 16px;

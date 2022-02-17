@@ -3,7 +3,6 @@ import './BlogItem.css';
 import {Link} from "react-router-dom";
 
 export const BlogItem = ({ data, img }) => {
-	console.log(data,img)
   return (
     <article className="blogs__item">
       <img src={img} alt="blog"/>

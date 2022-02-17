@@ -84,7 +84,7 @@ export const ClotherInfo = ({ itemList, clotherName }) => {
       </div>
 
       <ul className="clother__list">
-        <Clotheritem itemList={clothers} />
+        <Clotheritem itemList={clothers} clotherName={clotherName} />
       </ul>
       <Button buttonLink={clotherName} type="main" />
     </div>
