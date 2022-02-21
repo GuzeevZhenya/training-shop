@@ -1,7 +1,7 @@
 import React from 'react';
-import refresh from '../../img/Delivery/icons/refresh.svg';
-import car from '../../img/Delivery/icons/car.svg';
-import circle from '../../img/Delivery/icons/circle.svg';
+// import refresh from '../../img/Delivery/icons/refresh.svg';
+// import car from '../../img/Delivery/icons/car.svg';
+// import circle from '../../img/Delivery/icons/circle.svg';
 
 import './Delivery.css';
 

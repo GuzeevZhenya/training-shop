@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import banner from "../../img/Menu/Banner.jpg";
 import "./Menu.css";
-import { BrowserRouter, Route, NavLink } from "react-router-dom";
-import { Womenclother } from "../../Pages/Women/WomenClother";
+import { NavLink } from "react-router-dom";
 import Women from "../../img/Menu/Women.png";
 import Men from "../../img/Menu/Men.png";
 import Accessories from "../../img/Menu/Accessories.jpg";
@@ -27,7 +26,7 @@ export const Menu = ({ imgSlider }) => {
   return (
     <div className="menu">
       <div className="menu__slider">
-        <img src={banner} />
+        <img src={banner} alt={ banner}/>
         <button
           onClick={showPrevSlide}
           className=" btn btn-circle btn-slider btn-slider-prev"
@@ -50,20 +49,20 @@ export const Menu = ({ imgSlider }) => {
       <div className="menu__items">
         <div className="menu__item-small small__items">
           <div className="menu__item small__item small__item-women">
-            <img src={Women} />
+            <img src={Women} alt={ Women}/>
             <NavLink to="/women" className="menu__text">
               Women
             </NavLink>
           </div>
           <div className="menu__item small__item small__item-men">
-            <img src={Men} />
+            <img src={Men} alt={Men}/>
             <NavLink to="/men" className="menu__text">
               Men
             </NavLink>
           </div>
         </div>
         <div className="menu__item menu__item-big">
-          <img src={Accessories} />
+          <img src={Accessories} alt={Accessories}/>
           <button className="menu__text">Accessories</button>
         </div>
       </div>

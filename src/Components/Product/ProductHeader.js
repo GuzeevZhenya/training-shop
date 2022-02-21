@@ -4,9 +4,9 @@ import { Star } from '../Clothers/ClotherInfo/Star/Star';
  
 import './ProductHeader.css'
 const MyComponent = ({ data,id,nameProduct }) => {
-  console.log(data);
+   
   const name = data.filter(item=>item.id == id);
-  console.log(name[0].text)
+ 
   return (
     <div className="product-header">
       <div className="container">

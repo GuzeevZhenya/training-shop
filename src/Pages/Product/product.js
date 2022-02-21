@@ -1,7 +1,7 @@
 import React from "react";
 
 import {
-  useParams,useLocation
+  useParams
 } from "react-router-dom";
 
 import ProductHeader from "../../Components/Product/ProductHeader";
@@ -11,7 +11,7 @@ import { clothersItems } from "../../ClothersBd";
 export const Product = ({ name, link }) => {
 
   let { id} = useParams();
-  console.log(name)
+  
   return (
     <div className="container">
       <ProductHeader data={clothersItems.men} id={id} nameProduct="men"/>

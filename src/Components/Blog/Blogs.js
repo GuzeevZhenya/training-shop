@@ -24,9 +24,6 @@ const blogData = [
 		"desc": "But I must explain to you how all this mistaken idea of denouncing pleas and praising pain was bor"
 	}
 ]
-  
-
- 
 
 
 export const Blogs = () => {

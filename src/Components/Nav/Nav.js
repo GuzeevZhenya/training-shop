@@ -33,7 +33,7 @@ export default function Nav() {
   };
 
   const showButton = () => {
-    if (window.innerWidth <= 670) {
+    if (window.innerWidth <= 960) {
       setButton(false);
     } else {
       setButton(true);
@@ -53,21 +53,7 @@ export default function Nav() {
         </NavLink>
       </div>
       <div className="nav__menu">
-        <div
-          className={
-            button ? (
-              'navbar__navigation-btn__mobile'
-            ) : (
-              'navbar__navigation-btn__mobile  navbar__navigation-btn__mobile--active'
-            )
-          }
-          onClick={HandelClick}>
-          {active ? (
-            <img src={openMenu} alt="icon-burger" />
-          ) : (
-            <img src={closeMenu} alt="icon-close" />
-          )}
-        </div>
+     
         <ul className={active ? 'nav__menu-list' : 'nav__menu-list--active'}>{menu}</ul>
       </div>
       <div className="nav__info">
@@ -75,6 +61,21 @@ export default function Nav() {
         <img src={earth} alt="earth" />
         <img src={person} alt="person" />
         <img src={buy} alt="buy" />
+        <div
+        className={
+          button ? (
+            'navbar__navigation-btn__mobile'
+          ) : (
+            'navbar__navigation-btn__mobile  navbar__navigation-btn__mobile--active'
+          )
+        }
+        onClick={HandelClick}>
+        {active ? (
+          <img src={openMenu} alt="icon-burger" />
+        ) : (
+          <img src={closeMenu} alt="icon-close" />
+        )}
+      </div>
       </div>
     </div>
   );

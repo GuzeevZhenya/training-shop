@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import InfoBlock from './Components/Header/InfoBlock';
 import Nav from './Components/Nav/Nav';
@@ -7,11 +7,10 @@ import Main from './Pages/Main/Main';
 import { clothersItems } from './ClothersBd';
 
 import { Womenclother } from './Pages/Women/WomenClother';
-import { Manclother, Menclother } from './Pages/Men/MenClother';
+import { Menclother } from './Pages/Men/MenClother';
 import { Product } from './Pages/Product/product';
 
 function App() {
-  console.log(clothersItems)
   return (
     <BrowserRouter>
       <div className="app" data-test-id="app">
@@ -26,7 +25,7 @@ function App() {
           <Route exact path="/men" component={Menclother} />
           
           <Route exact path="/men/:id" component={Product} />
-          <Route exact path="/women/:id" component={Product} />
+          <Route exact path="/women/:id" component={Product } />
           <Route component={Main} />
         </Switch>
 

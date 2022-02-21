@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { Star } from '../Clothers/ClotherInfo/Star/Star';
-import { NavLink,Link } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 import './ProductSelect.css';
 
 
