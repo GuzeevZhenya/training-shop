@@ -13,6 +13,7 @@
     "react-router-dom": "^5.2.1",
     "react-scripts": "4.0.3",
     "styled-components": "^5.3.3",
+    "swiper": "^8.0.6",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -21,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy":"gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

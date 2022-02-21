@@ -34,12 +34,18 @@
 }
 
 .menu__slider {
-  position: relative;
-  margin-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 32px;
+  
 }
-.menu__slider img {
-  display: block;
+
+.menu__slider--item{
+  display: flex;
+  overflow: hidden;
 }
+ 
 
 .menu__item-small {
   display: flex;

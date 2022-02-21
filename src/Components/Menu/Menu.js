@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import banner from "../../img/Menu/Banner.jpg";
 import "./Menu.css";
 import { NavLink } from "react-router-dom";
@@ -9,41 +9,61 @@ import "../Slider/Slider.css";
 
 import btnNext from "../../img/Menu/chevron-right 1.svg";
 import btnPrev from "../../img/Menu/chevron-left 1.svg";
-export const Menu = ({ imgSlider }) => {
-  const [numbers, setNumbers] = useState(4);
-  const showPrevSlide = () => {
-    if (numbers > 1) {
-      setNumbers(numbers - 1);
-    } else setNumbers(imgSlider.length);
-  };
+import { HeroSlider } from "../Sliders/Sliders";
 
-  const showNextSlide = () => {
-    if (numbers <= imgSlider.length - 1) {
-      setNumbers(numbers + 1);
-    } else setNumbers(1);
-  };
+const img = [banner, Women,Men,Accessories];
+
+
+
+export const Menu = ({ imgSlider }) => {
+  // const [prev, setPrev] = useState(false);
+  // const [next, setNext] = useState(false);
+
+
+  // const slider = useRef();
+  // let position = 0;
+
+  // // const [numbers, setNumbers] = useState(4);
+  // const showPrevSlide = () => {
+  //   console.log('prev')
+  //   // if (numbers > 1) {
+  //   //   setNumbers(numbers - 1);
+  //   // } else setNumbers(imgSlider.length);
+  //   if (position === 0) {
+  //     setPrev(true)
+  //   } else {
+  //     position += 430;
+  //     setPrev(false);
+  //     slider.current.childNodes.forEach((elem) => {
+  //       elem.style = `transform:translateX(${position}px)`
+  //   })
+  //   }
+
+  
+  // };
+
+  // const showNextSlide = () => {
+  //   // if (numbers <= imgSlider.length - 1) {
+  //   //   setNumbers(numbers + 1);
+  //   // } else setNumbers(1);
+  //   if (position === -(img.length - 4) * 100 + 100) {
+  //     console.log(position)
+  //     setPrev(false);
+  //     setNext(true);
+  //   } else {
+  //     position -= 530;
+  //     setNext(false);
+  //     slider.current.childNodes.forEach((elem) => {
+  //       elem.style = `transform:translateX(${position}px)`
+  //   })
+  //   }  
+  // };
 
   return (
     <div className="menu">
-      <div className="menu__slider">
-        <img src={banner} alt={ banner}/>
-        <button
-          onClick={showPrevSlide}
-          className=" btn btn-circle btn-slider btn-slider-prev"
-          type="button"
-        >
-          <img src={btnPrev} alt="icon" />
-        </button>
-        <button
-          onClick={showNextSlide}
-          className=" btn btn-circle btn-slider btn-slider-next"
-          type="button"
-        >
-          <img src={btnNext} alt="icon" />
-        </button>
-        <div className="menu__text slider__block">
-          <p className="menu__text-small">Banner</p>
-          <p className="menu__text-big">You Title Text</p>
+      <div className="menu__slider" >
+        <div className="menu__slider--item">
+          <HeroSlider imgSlider={img}/>
         </div>
       </div>
       <div className="menu__items">
