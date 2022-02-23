@@ -14,6 +14,7 @@ import color3 from "../../img/Product/color3.png";
 import color4 from "../../img/Product/color4.png";
 
 import { Productselect } from "./ProductSelect";
+import { ProductSlider } from "../Sliders/Sliders";
 
 const productDb = {
   small: [small1, small2, small3, small4],
@@ -43,16 +44,11 @@ const productDb = {
 };
 
 export const ProductSection = () => {
-  const smallImage = productDb.small.map((item) => (
-    <img className="product__smallImage" src={item} alt={item} />
-  ));
   return (
     <div className="product__block">
-      <div className="product__block-smallimage">{smallImage}</div>
-      <div className="product__block-main">
-        <img src={main} />
-      </div>
-      <Productselect />
+     <ProductSlider/>
+    <Productselect />
     </div>
   );
+  
 };

@@ -4,10 +4,37 @@
   justify-content: space-between;
 }
 
-.product__block-smallimage {
+/* .product__block-smallimage {
   display: flex;
   flex-direction: column;
   margin-right: 15px;
+} */
+
+.product-preview__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.product-preview__button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;
+  transition: 0.3s ease-in-out;
+}
+
+.product-preview__button:hover {
+  opacity: 1;
+}
+.btn-up {
+  background-image: url('../../img/Product/chevron-up.svg');
+}
+
+.btn-down {
+  background-image: url('../../img/Product/chevron-down.svg');
 }
 
 .product__smallImage {
