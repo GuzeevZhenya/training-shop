@@ -37,13 +37,20 @@
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  padding-top: 32px;
+ 
   
 }
 
 .menu__slider--item{
   display: flex;
   overflow: hidden;
+}
+
+.menu__slider--item .swiper-button-prev{
+  left: 24px;
+}
+.menu__slider--item .swiper-button-next{
+ right: 24px;
 }
  
 

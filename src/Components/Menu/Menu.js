@@ -11,7 +11,7 @@ import btnNext from "../../img/Menu/chevron-right 1.svg";
 import btnPrev from "../../img/Menu/chevron-left 1.svg";
 import { HeroSlider } from "../Sliders/Sliders";
 
-const img = [banner, Women,Men,Accessories];
+const img = [banner, banner,banner,banner];
 
 
 

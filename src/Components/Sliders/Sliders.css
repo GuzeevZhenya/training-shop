@@ -1,6 +1,9 @@
 .swiper {
 	position: relative;
+}
 
+.product__slide{
+	margin-left: 30px;
 }
 .menu__slider .swiper{
 	max-width: 540px;
@@ -25,28 +28,31 @@
 .swiper-button-next {
 	width: 40px;
 	height: 40px;
-	background-color: var(--white-color);
+	background-color: rgb(180, 180, 180);
 	opacity: 0.6;
 	border-radius:50%;
 	background-repeat: no-repeat;
 	background-position: center center;
 	transition: 0.3s ease-in-out;
 }
+
+ 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
 	opacity: 1;
 }
 .swiper-button-prev {
 	right: auto;
-	left: 24px;
+	top: 240px;
+	left: 40px;
 	background-image: url("../../img/Menu/chevron-left\ 1.svg");
 }
 .swiper-button-next {
 	left: auto;
-	right: 24px;
+	top: 240px;
+	right: 110px;
 	background-image: url("../../img/Menu/chevron-right\ 1.svg");
 }
-
 
 .related__wrapper .swiper-slide{
 	display: flex;
@@ -54,6 +60,7 @@
 
 }
 .swiper__container .swiper{
+	display: flex;
 	 height: 505px;
 	 width: 94px;
 }
@@ -64,36 +71,26 @@
 .swiper__container .swiper .swiper-slide.swiper-slide-thumb-active{
 	 opacity: 1;
 }
+
 @media screen and (max-width: 768px) {
-	 .swiper{
-			 width: 100%;
-	 }
-}
-@media screen and (max-width: 600px) {
-	 .product-preview__wrapper .swiper{
-			 height: 500px;
-	 }
-	 .swiper__container .swiper{
-			 height: 444px;
-	 }
+	.swiper{
+			width: 100%;
+	}
 }
 @media screen and (max-width: 475px) {
+	.product-preview__wrapper .swiper{
+			height: 450px;
+	}
 
-	 .swiper-button-next,
-	 .swiper-button-prev {
-			 top: 10%;
-	 }
 
-	 .product-preview__wrapper .swiper .swiper-button-next,
-	 .product-preview__wrapper .swiper .swiper-button-prev{
-			 top: 50%;
-	 }
+	.swiper-button-next,
+	.swiper-button-prev {
+			top: 10%;
+	}
+
+	.product-preview__wrapper .swiper .swiper-button-next,
+	.product-preview__wrapper .swiper .swiper-button-prev{
+			top: 50%;
+	}
 }
-@media screen and (max-width: 425px) {
-	 .product-preview__wrapper .swiper{
-			 height: 450px;
-	 }
-	 .swiper__container .swiper{
-			 height: 395px;
-	 }
-}
+

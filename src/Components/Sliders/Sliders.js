@@ -17,9 +17,11 @@ import small1 from "../../img/Product/smallvers1.png";
 import small2 from "../../img/Product/smallvers2.png";
 import small3 from "../../img/Product/smallvers3.png";
 import small4 from "../../img/Product/smallvers4.png";
- 
+import { clothersItems } from '../../ClothersBd';
 
 const small = [small1,small2,small3,small4]
+
+
 
 
 export const HeroSlider = ({imgSlider}) => {
@@ -45,46 +47,45 @@ export const ProductSlider = () => {
     <>
 
   <div className="swiper__container">
-    <div className="product-preview__buttons">
-      <button className="product-preview__button btn-up"/>
-      <button className="product-preview__button btn-down"/>
-    </div>
-    <Swiper
-      onSwiper={setThumbsSwiper}
-      
-      freeMode={true}
-      direction={"vertical"}
-      watchSlidesProgress={true}
-      modules={[Navigation]}
-      navigation={{
-        nextEl: '.btn-up',
-        prevEl: '.btn-down'
-      }}
-      spaceBetween={30}
-      slidesPerView={4}
+  <div className="product-preview__buttons">
+  <button className="product-preview__button btn-up"/>
+  <button className="product-preview__button btn-down"/>
+</div>
+<Swiper
+  onSwiper={setThumbsSwiper}
+  freeMode={true}
+  direction={"vertical"}
+  watchSlidesProgress={true}
+  modules={[FreeMode, Navigation, Thumbs]}
+  navigation={{
+    nextEl: '.btn-up',
+    prevEl: '.btn-down'
+  }}
+  spaceBetween={30}
+  slidesPerView={4}
 
-    >
-      {
-        small.map((img, index) =>
-          <SwiperSlide key={`preview-slide-${index}`}
-          >
-            <img
-              className="product-preview__slide"
-              src={small[index]}
-              alt="product-preview"/>
-          </SwiperSlide>
-        )
-      }
-    </Swiper>
+>
+  {
+    small.map((img, index) =>
+      <SwiperSlide key={`preview-slide-${index}`}
+      >
+        <img
+          className="product-preview__slide"
+          src={small[index]}
+          alt="product-preview"/>
+      </SwiperSlide>
+    )
+  }
+</Swiper>
   </div>
-      <Swiper data-test-id="product-slider"
-        spaceBetween={0}
+      <Swiper
+        navigation
+        
         thumbs={{ swiper: thumbsSwiper }}
         slidesPerView={1}
         modules={[FreeMode, Navigation, Thumbs]}
-
       >
-        <SwiperSlide>
+        <SwiperSlide className='product__slide'>
           <img src={main} alt="slide1"/>
         </SwiperSlide>
         <SwiperSlide>

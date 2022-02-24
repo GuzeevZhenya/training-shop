@@ -5,7 +5,7 @@ import { Star } from "../ClotherInfo/Star/Star";
 import "./ClotherItem.css";
 
 export const Clotheritem = ({ itemList, clotherName }) => {
-  console.log(itemList)
+ 
   const [clothers, setClothers] = useState(itemList);
    
   return (
