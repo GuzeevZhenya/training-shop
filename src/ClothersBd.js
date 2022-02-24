@@ -151,3 +151,25 @@ export const clothersItems = {
     },
   ]
 }
+
+export const relatedItems =  [{
+  id: 1,
+  img: men1,
+  price: 30.00,
+  text: 'Men tracksuit Q110',
+  stars: 3,
+},
+{
+  id: 2,
+  img: men2,
+  price: 30.00,
+  text: 'Men tracksuit Q111',
+  stars: 2,
+},
+{
+  id: 3,
+  img: men3,
+  price: 30.00,
+  text: 'Men tracksuit Q112',
+  stars: 3,
+}]

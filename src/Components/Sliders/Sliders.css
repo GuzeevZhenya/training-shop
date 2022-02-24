@@ -47,13 +47,13 @@
 	background-image: url("../../img/Menu/chevron-right\ 1.svg");
 }
 
+
 .related__wrapper .swiper-slide{
 	display: flex;
 	 justify-content: center;
 
 }
 .swiper__container .swiper{
-	display: flex;
 	 height: 505px;
 	 width: 94px;
 }
@@ -64,25 +64,36 @@
 .swiper__container .swiper .swiper-slide.swiper-slide-thumb-active{
 	 opacity: 1;
 }
-
 @media screen and (max-width: 768px) {
-	.swiper{
-			width: 100%;
-	}
+	 .swiper{
+			 width: 100%;
+	 }
+}
+@media screen and (max-width: 600px) {
+	 .product-preview__wrapper .swiper{
+			 height: 500px;
+	 }
+	 .swiper__container .swiper{
+			 height: 444px;
+	 }
 }
 @media screen and (max-width: 475px) {
-	.product-preview__wrapper .swiper{
-			height: 450px;
-	}
 
+	 .swiper-button-next,
+	 .swiper-button-prev {
+			 top: 10%;
+	 }
 
-	.swiper-button-next,
-	.swiper-button-prev {
-			top: 10%;
-	}
-
-	.product-preview__wrapper .swiper .swiper-button-next,
-	.product-preview__wrapper .swiper .swiper-button-prev{
-			top: 50%;
-	}
+	 .product-preview__wrapper .swiper .swiper-button-next,
+	 .product-preview__wrapper .swiper .swiper-button-prev{
+			 top: 50%;
+	 }
+}
+@media screen and (max-width: 425px) {
+	 .product-preview__wrapper .swiper{
+			 height: 450px;
+	 }
+	 .swiper__container .swiper{
+			 height: 395px;
+	 }
 }
